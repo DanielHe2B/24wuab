@@ -1,8 +1,8 @@
 body {
     background-color: rgb(255, 255, 255);
     grid-template-areas:
-        "nav nav nav"
         "hd hd hd"
+        "nav nav nav"
         "mn mn mn"
         "ft ft";
     margin: 0;
@@ -17,6 +17,7 @@ body {
     background-color: rgb(67, 5, 154);
     height: 15vh;
     color: white;
+    
 }
 
 .menu {
@@ -56,25 +57,106 @@ body {
     left: 0;
 }
 
-.title {
+.introduction {
     color: black;
-    background-color: white;
     display: block;
     grid-area: "hd";
     text-align: center;
-    height: 10vh;
-    font-size: xx-large;
+    height: 80vh;
     font-family: sans-serif;
+    background-image: url("../img/lecture.png");
+    color: white;
+    background-size: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-color: black;
 }
 
+.introduction h1{
+    font-size: xxx-large;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(100,188,140);
+    height: 10vh;
+    align-items: center;
+    text-decoration:none;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.nav  a:before,.nav a:after{
+    content: "|";
+    padding: 0 10px;
+}
+
+.nav a:hover{
+    color: white;
+}
+
+main{
+    font-size: large;
+}
+
+.cardwrap{
+    display: flex;
+    text-align: center;
+    background-color: grey;
+    padding: 10px;
+    object-fit: cover;
+    margin: 10px;
+}
+.cardwrap h2{
+    font-family: sans-serif;
+}
+.card1 img{
+    max-width: 89%;
+    height: auto;
+}
+.card2 img{
+    max-width: 69%;
+    height: auto;
+}
+
+.card3 img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
 main iframe{
-    margin-left: 30%;
+    padding: 10px;
 }
 
 main ul{
     font-size: xx-large;
     margin-left: 20%;
     font-family: sans-serif;
+}
+
+main h2{
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+.description{
+    background-image: url('../img/learning.png');
+    height: 60vh;
+    padding: 10px;
+    color: white;
+    background-size: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+.description h2{
+    font-family: sans-serif;
+    text-align: center;
+
 }
 
 footer {
@@ -84,8 +166,8 @@ footer {
     background-color: rgb(67, 5, 154);
     font-family: sans-serif;
     color: white;
-    padding: 10px;
     align-items:baseline;
+    justify-content: space-around;
 }
 
 footer h3 {
@@ -120,7 +202,10 @@ a:hover {
 
 
 
-@media (max-width:800px) {
+@media (max-width:600px) {
+    .nav{
+        display: none;
+    }
 
     .menu-button{
         display: flex;
@@ -128,13 +213,13 @@ a:hover {
     }
 
     main {
+        display: grid;
         font-size: xx-large;
-        margin: 6px;
         padding: 10px;
         font-family: sans-serif;
     }
      main iframe{
-        margin-left:none;
+        display: none;
     }
     main h2{
         font-size: xx-large;
@@ -148,7 +233,6 @@ a:hover {
         grid-area: "hd";
         text-align: center;
         background-image: url('img/lecture.jpg');
-
     }
 
     body {
@@ -203,4 +287,57 @@ a:hover {
         width: auto;
     }
 
+    .biography h3, .contact h3{
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+
+    }
+
+    .titleAboutUs{
+        text-align: center;
+    }
+
+    .CEO h2{
+        text-align: left;
+
+    }
+    main h3{
+        font-size: large;
+        text-align: center;
+        color:rgba(27, 18, 18, 0.689);
+        font-family: serif;
+    }
+    .corporationInfo img{
+        width: 15%;
+        height: auto;
+        margin-left: 45%;
+    }
+    .corporationInfo h3{
+        color: black;
+    }
+
+   #sendButton {
+    text-decoration: none;
+    background-color: rgba(5, 168, 5, 0.651);
+    text-align: center;
+    width: 30%;
+    color: rgb(67, 5, 154);
+    padding: 10px;
+    margin: 10px;
+    font-size: medium;
+    margin-left: 33%;
+   }
+   #sendButton:hover{
+    color:  rgb(67, 5, 154);
+}
+
+.national{
+    background-image: url(../img/sweden.jpg);
+    height: 100vw;
+    background-size: 100%;
+    padding: 10px;
+    color: white;
+}
 }
