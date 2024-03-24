@@ -303,6 +303,57 @@ a:hover {
     text-align: left;
 }
 
+.cardParent {
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s;
+    margin: 4rem;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-family: sans-serif;
+    align-items: center;
+    color: rgb(67, 5, 154);
+    max-height: 600px;
+}
+.personericons{
+    border-radius: 900px;
+    margin: 2rem;
+    width: 200px;
+    height: 200px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-content:center;
+    grid-area: pictures;
+}
+.card1content{
+    margin: 10px;
+}
+.parentTitle{
+    font-size: xxx-large;
+    text-align: center;
+    font-family: sans-serif;
+}
+.cardParentTitle{
+    color: rgba(5, 168, 5, 0.651);
+}
+.cardParent h3{
+    color: black;
+    font-family: serif;
+}
+.Experiences{
+        display: flex;
+        justify-content: space-around;
+}
+.cardParent:hover {
+    transform: scale(1.05);
+}
+
 @media (max-width:600px) {
     .nav{
         display: none;
@@ -496,11 +547,24 @@ main ul{
     color: white;
 }
 .description h3{
-color: black;
+color: rgb(255, 255, 255);
 opacity: 100%;
+
 }
 .description img{
     opacity: 10%;
 }
 
+.card1 h3,.card2 h3,.card3 h3{
+    color: black;
+}
+
+.clientsExamples{
+    display: grid;
+}
+
+
+.Experiences{
+    display: grid;
+}
 }
