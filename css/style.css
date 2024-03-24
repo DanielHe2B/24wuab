@@ -200,7 +200,72 @@ a:hover {
     padding: 10px;
 }
 
+.titleAboutUs{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: xxx-large;
+}
+.corporationInfo {
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+}
+.corporationInfo img{
+    width: 10%;
+    height: auto;
+}
+.national{
+    background-image: url(../img/sweden.jpg);
+    background-size: 100%;
+    height: 60vw;
+}
 
+.aboutpage{
+    display: flex;
+}
+
+.aboutpage img{
+    width: 40vw;
+}
+
+.aboutpage h2{
+    color: rgb(67, 5, 154);
+    text-align: center;
+}
+.aboutpage h3{
+    margin: 10px;
+    padding: 10px;
+}
+
+.ourTeam{
+    display: grid;
+    text-align: center;
+    margin: 10px;
+}
+
+.staff{
+    display: flex;
+    width: 100%;
+
+}
+
+.staff img{
+    width: 23vw;
+    height: auto;
+    justify-content: space-around;
+}
+
+
+.bourbia{
+    display: grid;
+    color: rgb(67, 5, 154);
+    width: 25%;
+    font-family: sans-serif;
+    font-size: large;
+}
+.bourbia h2, .bourbia h3{
+    text-align: left;
+}
 
 @media (max-width:600px) {
     .nav{
@@ -208,7 +273,7 @@ a:hover {
     }
 
     .menu-button{
-        display: flex;
+        display: grid;
         grid-area: "nav";
     }
 
@@ -217,6 +282,7 @@ a:hover {
         font-size: xx-large;
         padding: 10px;
         font-family: sans-serif;
+        grid-area: mn;
     }
      main iframe{
         display: none;
@@ -309,6 +375,10 @@ a:hover {
         color:rgba(27, 18, 18, 0.689);
         font-family: serif;
     }
+    .corporationInfo{
+        display: grid;
+    }
+    
     .corporationInfo img{
         width: 15%;
         height: auto;
@@ -340,4 +410,31 @@ a:hover {
     padding: 10px;
     color: white;
 }
+
+.ourTeam{
+    display: grid;
+    padding: 10px;
+}
+.staff{
+    display: grid;
+}
+.bourbia{
+    display: flex;
+    margin: 10px;
+}
+.bourbia h2, .bourbia h3{
+    font-size: medium;
+    margin: 10px;
+}
+
+.aboutpage{
+    display: grid;
+}
+.aboutpage img{
+    width: 100%;
+}
+.CEO h2{
+    font-size: x-large;
+}
+
 }
