@@ -60,9 +60,7 @@ body {
     color: black;
     display: block;
     grid-area: "hd";
-    text-align: center;
     height: 80vh;
-    font-family: sans-serif;
     background-image: url("../img/lecture.png");
     color: white;
     background-size: 100%;
@@ -73,7 +71,8 @@ body {
 }
 
 .introduction h1{
-    font-size: xxx-large;
+    font-size: xx-large;
+    font-family: sans-serif;
 }
 
 .nav{
@@ -102,11 +101,10 @@ main{
 
 .cardwrap{
     display: flex;
-    text-align: center;
-    background-color: grey;
     padding: 10px;
     object-fit: cover;
     margin: 10px;
+    filter: sepia(80%);
 }
 .cardwrap h2{
     font-family: sans-serif;
@@ -132,9 +130,7 @@ main iframe{
 }
 
 main ul{
-    font-size: xx-large;
-    margin-left: 20%;
-    font-family: sans-serif;
+    font-size: x-large;
 }
 
 main h2{
@@ -163,14 +159,12 @@ footer {
     grid-area: ft;
     color: black;
     background-color: rgb(67, 5, 154);
-    font-family: sans-serif;
     color: white;
     align-items:baseline;
     justify-content: space-around;
 }
 
 footer h3 {
-    font-size: medium;
     width: 30vw;
 }
 
@@ -202,7 +196,8 @@ a:hover {
 .titleAboutUs{
     text-align: center;
     font-family: sans-serif;
-    font-size: xxx-large;
+    color: rgb(67, 5, 154);
+
 }
 .corporationInfo {
     display: flex;
@@ -212,25 +207,23 @@ a:hover {
 
 .desc{
      display: grid;
-     font-family: sans-serif;
      text-align: center;
 }
 
 .corporationInfo img{
-    width: 6%;
-    height: 10%;
+    width: 4%;
+    height: 7%;
 }
 .contactTitle{
-    text-align: center;
     color: rgb(67, 5, 154);
-    font-size: xx-large;
+    font-size: x-large;
     display: grid;
+    margin-left: 10%;
 }
 .formular{
-    text-align: center;
     display: grid;
-    width: 10vw;
-    margin-left: 45%;
+    width: 20vw;
+    margin-left: 10%;
 }
 #sendButton {
     text-decoration: none;
@@ -242,16 +235,9 @@ a:hover {
     margin: 10px;
     font-size: medium;
    }
-.national{
-    background-image: url(../img/sweden.jpg);
-    background-size: 100%;
-    height: 60vw;
-    color: white;
-    text-align: center;
-    padding: 5rem;
-    font-size: xxx-large;
 
-}
+
+
 #text{
     margin: 3rem;
 
@@ -266,7 +252,6 @@ a:hover {
 
 .aboutpage h2{
     color: rgb(67, 5, 154);
-    text-align: center;
 }
 .aboutpage h3{
     margin: 10px;
@@ -311,7 +296,6 @@ a:hover {
     background-color: #fff;
     transition: transform 0.3s;
     margin: 4rem;
-    text-align: center;
     align-items: center;
     flex-direction: column;
     display: flex;
@@ -335,13 +319,13 @@ a:hover {
     margin: 10px;
 }
 .parentTitle{
-    font-size: xxx-large;
+    font-size: xx-large;
     text-align: center;
     font-family: sans-serif;
+    color:  rgb(67, 5, 154);
+
 }
-.cardParentTitle{
-    color: rgba(5, 168, 5, 0.651);
-}
+
 .cardParent h3{
     color: black;
     font-family: serif;
@@ -525,7 +509,6 @@ a:hover {
 }
 .formular{
     width: auto;
-    margin-left: 0%;
 }
 .introduction{
     grid-area: 'mn';
@@ -535,13 +518,14 @@ a:hover {
 }
 .introduction h3{
     color: white;
+    font-family: serif;
 }
-intr
 main ul{
     margin-left: 0%;
 }
 .cardwrap{
     display: grid;
+    
 }
 .description h2{
     color: white;
