@@ -68,22 +68,27 @@ body {
     background-repeat: no-repeat;
     padding: 20px;
     background-color: black;
+    font-family: sans-serif;
 }
 
 .introduction h1{
     font-size: xx-large;
-    font-family: sans-serif;
+    text-align: center;
+    font-family: serif;
 }
-
+.nav a{
+    color: white;
+    text-decoration: none;
+}
 .nav{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(100,188,140);
+    background-color: rgb(67, 5, 154);
     height: 10vh;
     align-items: center;
     text-decoration:none;
-    font-family: sans-serif;
     font-size: large;
+    color: white;
 }
 
 .nav  a:before,.nav a:after{
@@ -92,7 +97,7 @@ body {
 }
 
 .nav a:hover{
-    color: white;
+    color: salmon;
 }
 
 main{
@@ -104,26 +109,39 @@ main{
     padding: 10px;
     object-fit: cover;
     margin: 10px;
-    filter: sepia(80%);
-}
-.cardwrap h2{
     font-family: sans-serif;
 }
+
 .card1 img{
-    max-width: 89%;
+}
+
+
+.card1 img{
+    max-width: 72%;
     height: auto;
 }
 .card2 img{
-    max-width: 69%;
+    max-width: 81%;
     height: auto;
 }
+
 
 .card3 img{
-    max-width: 100%;
+    max-width: 79%;
     height: auto;
 }
+.card1, .card2, .card3{
+    margin:15px ;
+}
+.card1 h2, .card2 h2, .card3 h2{
+    color: rgb(67, 5, 154);
+    font-family: serif;
+}
+.ourTeam h2{
+    color: rgb(67, 5, 154);
+    font-family: serif;
 
-
+}
 
 main iframe{
     padding: 10px;
@@ -139,7 +157,6 @@ main h2{
 }
 
 .description{
-    background-image: url('../img/learning.png');
     height: 60vh;
     padding: 10px;
     color: white;
@@ -147,11 +164,15 @@ main h2{
     object-fit: contain;
     background-repeat: no-repeat;
     margin: 10px;
+    font-family: sans-serif;
+    background-color:rgb(67, 5, 154);    
 }
 .description h2{
-    font-family: sans-serif;
     text-align: center;
-
+    font-family: serif;
+}
+.description h3{
+    margin: 10px;
 }
 
 footer {
@@ -162,6 +183,7 @@ footer {
     color: white;
     align-items:baseline;
     justify-content: space-around;
+    font-family: sans-serif;
 }
 
 footer h3 {
@@ -193,16 +215,21 @@ a:hover {
     padding: 10px;
 }
 
+li{
+    font-family: sans-serif;
+}
+
 .titleAboutUs{
     text-align: center;
-    font-family: sans-serif;
     color: rgb(67, 5, 154);
-
+    font-size: xx-large;
 }
 .corporationInfo {
     display: flex;
     width: auto;
     justify-content: space-around;
+    filter: grayscale(100%);
+    font-family: sans-serif;
 }
 
 .desc{
@@ -220,10 +247,14 @@ a:hover {
     display: grid;
     margin-left: 10%;
 }
+.contactTitle{
+    font-family: serif;
+}
 .formular{
     display: grid;
     width: 20vw;
     margin-left: 10%;
+    font-family: sans-serif;
 }
 #sendButton {
     text-decoration: none;
@@ -252,22 +283,25 @@ a:hover {
 
 .aboutpage h2{
     color: rgb(67, 5, 154);
+    font-family: serif;
 }
+
 .aboutpage h3{
     margin: 10px;
     padding: 10px;
+    font-family: sans-serif;
 }
 
 .ourTeam{
     display: grid;
     text-align: center;
     margin: 10px;
+    font-size: large;
 }
 
 .staff{
     display: flex;
     width: 100%;
-
 }
 
 .staff img{
@@ -276,7 +310,9 @@ a:hover {
     justify-content: space-around;
 }
 
-
+.staff h2, .staff h3{
+    font-family:serif;
+}
 .bourbia{
     display: grid;
     color: rgb(67, 5, 154);
@@ -287,7 +323,9 @@ a:hover {
 .bourbia h2, .bourbia h3{
     text-align: left;
 }
-
+.CEO img, .staff img{
+    filter: grayscale(90%);
+}
 .cardParent {
     max-width: 300px;
     border-radius: 8px;
@@ -304,6 +342,11 @@ a:hover {
     color: rgb(67, 5, 154);
     max-height: 600px;
 }
+
+.cardParent h2{
+    font-family: serif;
+}
+
 .personericons{
     border-radius: 900px;
     margin: 2rem;
@@ -314,6 +357,7 @@ a:hover {
     align-items: center;
     justify-content:center;
     grid-area: pictures;
+    filter: grayscale(70%);
 }
 .card1content{
     margin: 10px;
@@ -321,14 +365,17 @@ a:hover {
 .parentTitle{
     font-size: xx-large;
     text-align: center;
-    font-family: sans-serif;
     color:  rgb(67, 5, 154);
 
 }
-
+.corporationInfo h2{
+    font-size: x-large;
+}
+.cardParent h2{
+    font-size: x-large;
+}
 .cardParent h3{
     color: black;
-    font-family: serif;
 }
 .Experiences{
         display: flex;
@@ -339,6 +386,11 @@ a:hover {
 }
 
 @media (max-width:600px) {
+    .cardParent h3{
+    }
+    .cardParent h2{
+        text-align: left;
+    }
     .nav{
         display: none;
     }
@@ -347,28 +399,25 @@ a:hover {
         display: grid;
         grid-area: "nav";
     }
-
+   
     main {
         display: grid;
         font-size: xx-large;
         padding: 10px;
-        font-family: sans-serif;
         grid-area: mn;
     }
+
      main iframe{
         display: none;
     }
     main h2{
         font-size: xx-large;
-        text-align: center;
-        color:  rgb(67, 5, 154);
     }
 
     .title {
         background-color: rgb(58, 191, 153);
         display: block;
         grid-area: "hd";
-        text-align: center;
         background-image: url('img/lecture.jpg');
     }
 
@@ -398,8 +447,6 @@ a:hover {
         grid-area: ft;
         color: black;
         background-color: rgb(67, 5, 154);
-        font-family: sans-serif;
-        text-align: center;
         color: white;
     }
 
@@ -419,7 +466,7 @@ a:hover {
     }
 
     .biography, .explore, .fastlinks, .contact{
-        text-align: center;
+        text-align: left;
         display: grid;
         width: auto;
     }
@@ -428,26 +475,31 @@ a:hover {
         width: 100%;
         align-items: center;
         align-content: center;
-        text-align: center;
 
     }
 
     .titleAboutUs{
-        text-align: center;
+        font-size: xx-large;
+    }
+    .titleAboutUs h1{
     }
 
     .CEO h2{
         text-align: left;
-
+        font-size: large;
+    }
+    .CEO img, .staff img{
     }
     main h3{
         font-size: large;
-        text-align: center;
-        color:rgba(27, 18, 18, 0.689);
-        font-family: serif;
     }
     .corporationInfo{
         display: grid;
+        font-size: small;
+        text-align: left;
+    }
+    .corporationInfo h2{
+        font-size: large;
     }
     
     .corporationInfo img{
@@ -494,7 +546,7 @@ a:hover {
     margin: 10px;
 }
 .bourbia h2, .bourbia h3{
-    font-size: medium;
+    font-size: larger;
     margin: 10px;
 }
 
@@ -518,30 +570,43 @@ a:hover {
 }
 .introduction h3{
     color: white;
-    font-family: serif;
 }
 main ul{
     margin-left: 0%;
 }
 .cardwrap{
     display: grid;
-    
 }
-.description h2{
-    color: white;
-}
+
 .description h3{
-color: rgb(255, 255, 255);
-opacity: 100%;
+    opacity: 100%;
+
 
 }
 .description img{
     opacity: 10%;
 }
-
+.cardwrap h2{
+    font-family: serif;
+}
 .card1 h3,.card2 h3,.card3 h3{
     color: black;
 }
+
+.card1 img{
+    max-width: 70%;
+    height: auto;
+}
+.card2 img{
+    max-width: 70%;
+    height: auto;
+}
+
+.card3 img{
+    max-width: 70%;
+    height: auto;
+}
+
 
 .clientsExamples{
     display: grid;
