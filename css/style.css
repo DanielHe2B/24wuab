@@ -112,9 +112,6 @@ main{
     font-family: sans-serif;
 }
 
-.card1 img{
-}
-
 
 .card1 img{
     max-width: 72%;
@@ -357,7 +354,7 @@ li{
     align-items: center;
     justify-content:center;
     grid-area: pictures;
-    filter: grayscale(70%);
+    filter: grayscale(90%);
 }
 .card1content{
     margin: 10px;
@@ -480,16 +477,13 @@ li{
 
     .titleAboutUs{
         font-size: xx-large;
-    }
-    .titleAboutUs h1{
-    }
+    }    
 
     .CEO h2{
         text-align: left;
         font-size: large;
     }
-    .CEO img, .staff img{
-    }
+
     main h3{
         font-size: large;
     }
@@ -580,8 +574,6 @@ main ul{
 
 .description h3{
     opacity: 100%;
-
-
 }
 .description img{
     opacity: 10%;
